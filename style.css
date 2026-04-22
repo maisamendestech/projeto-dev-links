@@ -32,7 +32,8 @@ body {
     */
 
     /*shorthand*/
-    background: var(--bg-url) no-repeat top center/cover
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body *{
@@ -80,7 +81,7 @@ body *{
 
     position: absolute;
     top: 50%;
-    left: ;: 0;
+    left: 0;
     z-index: 1;
     transform: translateY(-50%);
 }
@@ -161,4 +162,15 @@ footer{
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+
+/*media queries*/
+@media (min-whidth: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light{
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
